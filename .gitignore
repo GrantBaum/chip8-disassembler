@@ -1,6 +1,15 @@
 # Prerequisites
 *.d
 
+# 1. Ignore everything
+*
+
+# 2. Re-include all directories so Git can look inside them
+!*/
+
+# 3. Re-include all files that contain a dot (files with extensions)
+!*.*
+
 # Compiled Object files
 *.slo
 *.lo
@@ -66,3 +75,6 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+#roms
+*.ch8
